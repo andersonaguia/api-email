@@ -1,7 +1,7 @@
 version: '1.0'
 services: 
   nestjs:
-    image: api-mail
+    image: api-email:1.0
     build:
       context: .
       dockerfile: Dockerfile
