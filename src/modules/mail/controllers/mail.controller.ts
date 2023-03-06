@@ -13,9 +13,9 @@ export class MailController {
       const result = await this.createMailService.create(data)
       if (result) {
         return new NestResponseBuilder()
-          .withStatus(HttpStatus.CREATED)
+          .withStatus(HttpStatus.OK)
           .withBody({
-            statusCode: HttpStatus.CREATED,
+            statusCode: HttpStatus.OK,
             message: "Emails successfully sent"
           })
           .build();

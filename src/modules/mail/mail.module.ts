@@ -13,7 +13,8 @@ import { MailController } from './controllers/mail.controller';
             isGlobal: true
         }),
         MailerModule.forRoot({
-            transport: `smtps://${process.env.USER_EMAIL}:${process.env.PASSWORD}@${process.env.SERVER_EMAIL}`,
+            transport:
+                `smtps://${process.env.USER_EMAIL}:${process.env.PASSWORD}@${process.env.SERVER_EMAIL}`,
             defaults: {
                 from: `"Solar Tambaú" <${process.env.USER_EMAIL}>`,
             },
